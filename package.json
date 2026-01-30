@@ -12,7 +12,7 @@
     "verify-setup": "node scripts/verify-setup.js"
   },
   "dependencies": {
-    "@anthropic-ai/sdk": "^0.32.1",
+    "@google/generative-ai": "^0.32.1",
     "@supabase/supabase-js": "^2.39.7",
     "next": "14.1.0",
     "react": "^18.2.0",
