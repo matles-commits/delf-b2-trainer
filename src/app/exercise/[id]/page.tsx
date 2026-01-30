@@ -4,9 +4,10 @@ import { useEffect, useState } from 'react';
 import { useRouter, useParams } from 'next/navigation';
 import { supabase } from '@/lib/supabase/client';
 import { ArrowLeft, Clock, Send, AlertCircle } from 'lucide-react';
-import ComprehensionEcriteExercise from '@/components/exercises/ComprehensionEcrite';
-import ProductionEcriteExercise from '@/components/exercises/ProductionEcrite';
-import ProductionOraleExercise from '@/components/exercises/ProductionOrale';
+import ComprehensionEcrite from '../../components/exercises/ComprehensionEcrite';
+import ProductionEcrite from '../../components/exercises/ProductionEcrite';
+import ProductionOrale from '../../components/exercises/ProductionOrale';
+import supabaseClient from '../../lib/supabase/client';
 import type { Exercise } from '@/types';
 
 export default function ExerciseDetailPage() {
