@@ -2,7 +2,7 @@
 
 import { useEffect, useState, Suspense } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
-import { supabase } from './lib/supabase/client';
+import { supabase } from '@/lib/supabase/client';
 import { ArrowLeft, BookOpen, Clock, Target } from 'lucide-react';
 import type { Exercise } from '@/types';
 
