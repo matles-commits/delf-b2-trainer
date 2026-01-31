@@ -221,21 +221,21 @@ export default function ExerciseDetailPage() {
 
         <div className="max-w-4xl mx-auto">
           {exercise.skill === 'comprehension_ecrite' && (
-            <ComprehensionEcriteExercise
+            <ComprehensionEcrite
               exercise={exercise}
               onAnswerChange={setUserAnswer}
             />
           )}
 
           {exercise.skill === 'production_ecrite' && (
-            <ProductionEcriteExercise
+            <ProductionEcrite
               exercise={exercise}
               onAnswerChange={setUserAnswer}
             />
           )}
 
           {exercise.skill === 'production_orale' && (
-            <ProductionOraleExercise
+            <ProductionOrale
               exercise={exercise}
               onAnswerChange={setUserAnswer}
             />
