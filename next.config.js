@@ -1,7 +1,9 @@
+/** @type {import('next').NextConfig} */
 const nextConfig = {
-  // ... config
+  reactStrictMode: true,
+  images: {
+    domains: ['lh3.googleusercontent.com'],
+  },
 }
 
-console.log('Next.js config loaded, __dirname:', __dirname);
-
-module.exports = nextConfig;
+module.exports = nextConfig
