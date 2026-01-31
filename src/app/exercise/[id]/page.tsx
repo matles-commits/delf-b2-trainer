@@ -7,7 +7,6 @@ import { ArrowLeft, Clock, Send, AlertCircle } from 'lucide-react';
 import ComprehensionEcrite from '@/components/exercises/ComprehensionEcrite';
 import ProductionEcrite from '@/components/exercises/ProductionEcrite';
 import ProductionOrale from '@/components/exercises/ProductionOrale';
-import { supabase } from '@/lib/supabase/client';
 import type { Exercise } from '@/types';
 
 export default function ExerciseDetailPage() {
