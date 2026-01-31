@@ -4,9 +4,9 @@ import { useEffect, useState } from 'react';
 import { useRouter, useParams } from 'next/navigation';
 import { supabase } from '@/lib/supabase/client';
 import { ArrowLeft, Clock, Send, AlertCircle } from 'lucide-react';
-import ComprehensionEcrite from '@/components/exercises/ComprehensionEcrite';
-import ProductionEcrite from '@/components/exercises/ProductionEcrite';
-import ProductionOrale from '@/components/exercises/ProductionOrale';
+import ComprehensionEcriteExercise from '@/components/exercises/ComprehensionEcrite';
+import ProductionEcriteExercise from '@/components/exercises/ProductionEcrite';
+import ProductionOraleExercise from '@/components/exercises/ProductionOrale';
 import type { Exercise } from '@/types';
 
 export default function ExerciseDetailPage() {
@@ -221,21 +221,21 @@ export default function ExerciseDetailPage() {
 
         <div className="max-w-4xl mx-auto">
           {exercise.skill === 'comprehension_ecrite' && (
-            <ComprehensionEcrite
+            <ComprehensionEcriteExercise
               exercise={exercise}
               onAnswerChange={setUserAnswer}
             />
           )}
 
           {exercise.skill === 'production_ecrite' && (
-            <ProductionEcrite
+            <ProductionEcriteExercise
               exercise={exercise}
               onAnswerChange={setUserAnswer}
             />
           )}
 
           {exercise.skill === 'production_orale' && (
-            <ProductionOrale
+            <ProductionOraleExercise
               exercise={exercise}
               onAnswerChange={setUserAnswer}
             />

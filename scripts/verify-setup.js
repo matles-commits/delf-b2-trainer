@@ -12,7 +12,7 @@ const requiredEnvVars = [
   'NEXT_PUBLIC_SUPABASE_URL',
   'NEXT_PUBLIC_SUPABASE_ANON_KEY',
   'SUPABASE_SERVICE_ROLE_KEY',
-  'ANTHROPIC_API_KEY',
+  'GEMINI_API_KEY',
   'NEXT_PUBLIC_SITE_URL',
 ];
 
@@ -65,10 +65,10 @@ if (supabaseUrl && !supabaseUrl.includes('supabase.co')) {
   allValid = false;
 }
 
-// Validate Claude API key format
-const claudeKey = process.env.ANTHROPIC_API_KEY;
-if (claudeKey && !claudeKey.startsWith('sk-ant-')) {
-  console.log('⚠️  ANTHROPIC_API_KEY ne semble pas être une clé Claude valide');
+// Validate Gemini API key format
+const geminiKey = process.env.GEMINI_API_KEY;
+if (geminiKey && !geminiKey.startsWith('AIza')) {
+  console.log('⚠️  GEMINI_API_KEY ne semble pas être une clé Gemini valide (devrait commencer par AIza)');
   allValid = false;
 }
 
