@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { evaluateWriting, evaluateComprehension } from '@/lib/gemini/api';
+import { evaluateWriting, evaluateComprehension } from '.../lib/gemini/api';
 
 export async function POST(request: NextRequest) {
   try {
