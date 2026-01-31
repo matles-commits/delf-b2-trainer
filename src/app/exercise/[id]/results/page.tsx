@@ -2,7 +2,7 @@
 
 import { useEffect, useState, Suspense } from 'react';
 import { useRouter, useParams, useSearchParams } from 'next/navigation';
-import { supabase } from '.../.../lib/supabase/client';
+import { supabase } from '../lib/supabase/client';
 import {
   ArrowLeft,
   Award,
